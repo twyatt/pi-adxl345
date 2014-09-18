@@ -25,7 +25,7 @@ public class Main {
 		float[] a = new float[3];
 		
 		while (true) {
-			adxl345.readRaw(raw);
+			adxl345.readRawAcceleration(raw);
 			for (int i = 0; i < raw.length; i++) {
 				a[i] = (float) raw[i] * scalingFactor * 9.8f;
 			}

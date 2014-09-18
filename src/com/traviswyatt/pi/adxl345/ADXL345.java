@@ -513,7 +513,7 @@ public class ADXL345 {
 	 * @param raw Array of raw values whereas index 0 = x, 1 = y, 2 = z
 	 * @throws IOException
 	 */
-	public void readRaw(short[] raw) throws IOException {
+	public void readRawAcceleration(short[] raw) throws IOException {
 		if (raw.length != 3)
 			throw new IllegalArgumentException("Acceleration array must have a length of 3");
 		
