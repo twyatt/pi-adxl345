@@ -5,7 +5,8 @@
 
 # Instructions
 ## Schematic
-![Schematic](schematic.jpg)
+![Pi Schematic](schematic-pi.jpg)
+![ADXL345 Schematic](schematic-adxl345.jpg)
 
 ## Wiring
 ![Wiring](wiring.jpg)
