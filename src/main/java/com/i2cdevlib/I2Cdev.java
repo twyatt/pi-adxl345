@@ -1,8 +1,8 @@
 package com.i2cdevlib;
 
-import java.io.IOException;
-
 import com.pi4j.io.i2c.I2CDevice;
+
+import java.io.IOException;
 
 /**
  * Partial adaptation from:
@@ -11,7 +11,6 @@ import com.pi4j.io.i2c.I2CDevice;
 public class I2Cdev {
 	
 	/** Read a single bit from an 8-bit device register.
-	 * @param devAddr I2C slave device address
 	 * @param regAddr Register regAddr to read from
 	 * @param bitNum Bit position to read (0-7)
 	 * @return Single bit value
@@ -39,7 +38,6 @@ public class I2Cdev {
 	}
 	
 	/** Read multiple bits from an 8-bit device register.
-	 * @param devAddr I2C slave device address
 	 * @param regAddr Register regAddr to read from
 	 * @param bitStart First bit position to read (0-7)
 	 * @param length Number of bits to read (not more than 8)
@@ -60,7 +58,6 @@ public class I2Cdev {
 	}
 	
 	/** Write multiple bits in an 8-bit device register.
-	 * @param devAddr I2C slave device address
 	 * @param regAddr Register regAddr to write to
 	 * @param bitStart First bit position to write (0-7)
 	 * @param length Number of bits to write (not more than 8)

@@ -1,12 +1,13 @@
 package com.traviswyatt.pi.adxl345;
 
-import java.io.IOException;
-
 import com.pi4j.io.i2c.I2CBus;
+import com.pi4j.io.i2c.I2CFactory;
+
+import java.io.IOException;
 
 public class Main {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException, I2CFactory.UnsupportedBusNumberException {
 		// http://developer-blog.net/wp-content/uploads/2013/09/raspberry-pi-rev2-gpio-pinout.jpg
 		// http://pi4j.com/example/control.html
 		ADXL345 adxl345 = new ADXL345(I2CBus.BUS_1);

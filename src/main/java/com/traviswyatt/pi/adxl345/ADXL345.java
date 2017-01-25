@@ -1,10 +1,10 @@
 package com.traviswyatt.pi.adxl345;
 
-import java.io.IOException;
-
 import com.i2cdevlib.I2Cdev;
 import com.pi4j.io.i2c.I2CDevice;
 import com.pi4j.io.i2c.I2CFactory;
+
+import java.io.IOException;
 
 public class ADXL345 {
 	
@@ -204,7 +204,7 @@ public class ADXL345 {
      * 
      * @throws IOException 
      */
-	public void setup() throws IOException {
+	public void setup() throws IOException, I2CFactory.UnsupportedBusNumberException {
 		// http://pi4j.com/example/control.html
 		i2c = I2CFactory.getInstance(i2cBus).getDevice(devAddr);
 		
